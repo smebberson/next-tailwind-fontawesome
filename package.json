@@ -1,0 +1,20 @@
+{
+  "name": "next-tailwind-fontawesome",
+  "version": "1.0.0",
+  "description": "An example site using Next.js, Tailwind and Font Awesome.",
+  "repository": "https://github.com/smebberson/next-tailwind-fontawesome",
+  "author": "Scott Mebberson <scott@scottmebberson.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
