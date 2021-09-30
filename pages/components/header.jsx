@@ -1,3 +1,5 @@
+import Icon from './icon';
+
 const features = [
     {
         description:
@@ -50,10 +52,7 @@ export default function Header() {
                         >
                             <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                                 <div className="absolute top-0 p-5 inline-block bg-green-900 rounded-xl shadow-lg transform -translate-y-1/2">
-                                    <i
-                                        className={`${feature.icon} h-6 w-6 text-white`}
-                                        aria-hidden="true"
-                                    ></i>
+                                    <Icon name={feature.icon} />
                                 </div>
                                 <h3 className="text-xl font-medium text-gray-900">
                                     {feature.title}
