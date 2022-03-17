@@ -76,6 +76,7 @@ export default function Header() {
                 <a
                     className="bg-emerald-500 rounded-md p-4 text-xl text-white font-bold shadow-xl"
                     href="https://github.com/smebberson/next-tailwind-fontawesome"
+                    rel="noreferrer"
                     target="_blank"
                 >
                     Get Started
