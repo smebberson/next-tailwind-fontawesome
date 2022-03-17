@@ -1,21 +1,24 @@
-import Icon from './icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const features = [
     {
         description:
-            'Comes pre-installed with Next.js, Prettier, Tailwind CSS.',
-        icon: 'fas fa-code',
+            'Comes pre-installed with Font Awesome, Next.js, Prettier and Tailwind CSS.',
+        icon: solid('code'),
         title: 'Development made-easy',
     },
     {
-        description: 'Use Tailwind CSS to easily create great looking pages.',
-        icon: 'fas fa-swatchbook',
+        description:
+            'Combine Font Awesome and Tailwind CSS to create great looking pages.',
+        icon: solid('swatchbook'),
         title: 'Stylish looks',
     },
 
     {
-        description: 'Uses Next.js for lightning fast pages out of the box.',
-        icon: 'fas fa-fast-forward',
+        description:
+            'Take advantage of Next.js for lightning fast pages out of the box.',
+        icon: solid('rocket'),
         title: 'Fast performance',
     },
 ];
@@ -52,7 +55,11 @@ export default function Header() {
                         >
                             <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                                 <div className="absolute top-0 p-5 inline-block bg-green-900 rounded-xl shadow-lg transform -translate-y-1/2">
-                                    <Icon name={feature.icon} />
+                                    <FontAwesomeIcon
+                                        icon={feature.icon}
+                                        className="h-6 w-6 text-white"
+                                        aria-hidden="true"
+                                    />
                                 </div>
                                 <h3 className="text-xl font-medium text-gray-900">
                                     {feature.title}
