@@ -26,16 +26,16 @@ const features = [
 export default function Header() {
     return (
         <div className="bg-white">
-            <div className="relative pb-32 bg-green-500">
+            <div className="relative pb-32 bg-emerald-500">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <h2 className="text-base font-semibold text-green-900 tracking-wide uppercase">
+                        <h2 className="text-base font-semibold text-emerald-900 tracking-wide uppercase">
                             Start strong
                         </h2>
                         <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
                             Start with a strong foundation.
                         </p>
-                        <p className="max-w-xl mt-5 mx-auto text-xl text-green-50">
+                        <p className="max-w-xl mt-5 mx-auto text-xl text-emerald-50">
                             Use this as a starting point for building websites
                             with Next.js, Tailwind CSS and Font Awesome. Build
                             whatever you like.
@@ -54,7 +54,7 @@ export default function Header() {
                             key={index}
                         >
                             <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                                <div className="absolute top-0 p-5 inline-block bg-green-900 rounded-xl shadow-lg transform -translate-y-1/2">
+                                <div className="absolute top-0 p-5 inline-block bg-emerald-900 rounded-xl shadow-lg transform -translate-y-1/2">
                                     <FontAwesomeIcon
                                         icon={feature.icon}
                                         className="h-6 w-6 text-white"
@@ -74,7 +74,7 @@ export default function Header() {
             </section>
             <div className="flex align-center justify-center">
                 <a
-                    className="bg-green-500 rounded-md p-4 text-xl text-white font-bold shadow-xl"
+                    className="bg-emerald-500 rounded-md p-4 text-xl text-white font-bold shadow-xl"
                     href="https://github.com/smebberson/next-tailwind-fontawesome"
                     target="_blank"
                 >
