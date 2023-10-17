@@ -28,6 +28,7 @@
     "start": "next start"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "1.6.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.5.5",
     "husky": "8.0.1",
