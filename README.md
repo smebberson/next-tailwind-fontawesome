@@ -52,3 +52,5 @@ Follow the steps at [Cloudflare Docs > Pages > Deploy a Next.js site > Use the E
 
 -   The Edge Runtime has already been setup on `app/api/features` and `app/ssr`.
 -   Yarn has been pinned to v1.22.19 using `packageManager` in `package.json`.
+-   You'll need to ensure `.npmrc.pages` is copied across and that you setup a `TOKEN_FOR_FONTAWESOME` environment variable.
+-   You'll need to ensure you [add the `nodejs_compat` flag](https://developers.cloudflare.com/workers/runtime-apis/nodejs#enable-nodejs-from-the-cloudflare-dashboard).
