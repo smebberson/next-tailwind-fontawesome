@@ -17,17 +17,22 @@
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.1.6"
+    "tailwindcss": "3.1.6",
+    "vercel": "32.4.1",
+    "wrangler": "3.13.1"
   },
   "scripts": {
     "build": "next build",
+    "build:ci": "yarn next-on-pages",
     "dev": "next dev",
+    "dev:ci": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat",
     "lint": "next lint",
     "pre-commit": "next lint",
     "prepare": "husky install",
     "start": "next start"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "1.6.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.5.5",
     "husky": "8.0.1",
@@ -36,5 +41,6 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }
